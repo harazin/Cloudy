@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,14 +34,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJw-ci-Kyv" userLabel="temperatureView">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="409"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-xI-0mh" userLabel="cityLabel">
-                                                <rect key="frame" x="64.666666666666671" y="90.666666666666657" width="184.66666666666663" height="38"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ooty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-xI-0mh" userLabel="cityLabel">
+                                                <rect key="frame" x="124.66666666666666" y="99.666666666666657" width="64.666666666666657" height="35"/>
                                                 <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="30"/>
                                                 <color key="textColor" name="labelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vct-0x-eDp" userLabel="temperatureLabel">
-                                                <rect key="frame" x="100.33333333333334" y="128.66666666666666" width="113.66666666666666" height="151.99999999999997"/>
+                                                <rect key="frame" x="90.333333333333357" y="134.66666666666666" width="133.66666666666663" height="139.99999999999997"/>
                                                 <fontDescription key="fontDescription" name="Overpass-Bold" family="Overpass" pointSize="120"/>
                                                 <color key="textColor" name="labelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -268,7 +268,7 @@
         <image name="cloud.sun.fill" catalog="system" width="64" height="44"/>
         <image name="sun.min.fill" catalog="system" width="64" height="60"/>
         <namedColor name="labelColor">
-            <color red="0.21565845610000001" green="0.21570226549999999" blue="0.2156556845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.21600000560283661" green="0.21600000560283661" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
