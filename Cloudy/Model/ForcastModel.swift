@@ -9,7 +9,7 @@
 import Foundation
 
 struct ForcastModel {
-    let Day: String
+    let day: String
     let conditionId: Int
     let temperature: Double
     var temperatureString: String {

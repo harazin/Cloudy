@@ -52,8 +52,9 @@ struct WeatherManager {
             let cityName = decodedData.city.name
             let temp = decodedData.list[0].main.temp
             let day1 = decodedData.list[8]
-            let dayName = day1.dtTxt.prefix(10)
-            let forcast1 = ForcastModel(Day: String(dayName), conditionId: day1.weather[0].id, temperature: day1.main.temp)
+            let dayDate = day1.dtTxt.prefix(10)
+            let dayName = getDayOfWeek(dayDate)
+            let forcast1 = ForcastModel(day: String(dayName!), conditionId: day1.weather[0].id, temperature: day1.main.temp)
             
             let forcasts = [forcast1]
             let weather = WeatherModel(cityName: cityName, temperature: temp, forcasts: forcasts)

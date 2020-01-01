@@ -57,6 +57,9 @@ extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.cityLabel.text = weather.cityName
+            self.temperatureLabel.text = weather.temperatureString
+            
+            self.forecast1Label.text = weather.forcasts[0].day
         }
     }
     
