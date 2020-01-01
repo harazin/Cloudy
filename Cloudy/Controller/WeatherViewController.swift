@@ -56,10 +56,30 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
+            // Update Labels Of Main Weather
             self.cityLabel.text = weather.cityName
             self.temperatureLabel.text = weather.temperatureString
             
-            self.forecast1Label.text = weather.forcasts[0].day
+            // Update Same-Day Forecast
+            self.forecast1Label.text = weather.forecasts[0].day
+            self.forecast1Temp.text = weather.forecasts[0].temperatureString
+            self.forecast1Image.image = UIImage(systemName: weather.forecasts[0].conditionName)
+            // Update Day 2 Forecast
+            self.forecast2Label.text = weather.forecasts[1].day
+            self.forecast2Temp.text = weather.forecasts[1].temperatureString
+            self.forecast2Image.image = UIImage(systemName: weather.forecasts[1].conditionName)
+            // Update Day 3 Forecast
+            self.forecast3Label.text = weather.forecasts[2].day
+            self.forecast3Temp.text = weather.forecasts[2].temperatureString
+            self.forecast3Image.image = UIImage(systemName: weather.forecasts[2].conditionName)
+            // Update Day 4 Forecast
+            self.forecast4Label.text = weather.forecasts[3].day
+            self.forecast4Temp.text = weather.forecasts[3].temperatureString
+            self.forecast4Image.image = UIImage(systemName: weather.forecasts[3].conditionName)
+            // Update Day 5 Forecast
+            self.forecast5Label.text = weather.forecasts[4].day
+            self.forecast5Temp.text = weather.forecasts[4].temperatureString
+            self.forecast5Image.image = UIImage(systemName: weather.forecasts[4].conditionName)
         }
     }
     

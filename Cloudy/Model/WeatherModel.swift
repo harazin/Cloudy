@@ -14,5 +14,5 @@ struct WeatherModel {
     var temperatureString: String {
         return String(format: "%.0f", temperature)
     }
-    let forcasts: [ForcastModel]
+    let forecasts: [Forecast]
 }

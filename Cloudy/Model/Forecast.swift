@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct ForcastModel {
+struct Forecast {
     let day: String
     let conditionId: Int
     let temperature: Double
     var temperatureString: String {
-        return String(format: "%.1f", temperature)
+        return String(format: "%.0f", temperature)
     }
     var conditionName: String {
         switch conditionId {

@@ -50,14 +50,22 @@ struct WeatherManager {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
             
             let cityName = decodedData.city.name
-            let temp = decodedData.list[0].main.temp
-            let day1 = decodedData.list[8]
-            let dayDate = day1.dtTxt.prefix(10)
-            let dayName = getDayOfWeek(dayDate)
-            let forcast1 = ForcastModel(day: String(dayName!), conditionId: day1.weather[0].id, temperature: day1.main.temp)
+            let localTemp = decodedData.list[0].main.temp
+                    
+            var forecasts = [Forecast]()
             
-            let forcasts = [forcast1]
-            let weather = WeatherModel(cityName: cityName, temperature: temp, forcasts: forcasts)
+            for i in 0...4 {
+                let day = decodedData.list[i*8]
+                let dayOfWeek = getDayOfWeek(day.dtTxt.prefix(10)) ?? "Date Unavaliable"
+                let conditionId = day.weather[0].id
+                let temperature = day.main.temp
+                
+                let forcast = Forecast(day: dayOfWeek, conditionId: conditionId, temperature: temperature)
+                forecasts.append(forcast)
+            }
+            
+            
+            let weather = WeatherModel(cityName: cityName, temperature: localTemp, forecasts: forecasts)
             return weather
         } catch {
             delegate?.didFailWithError(error: error)
