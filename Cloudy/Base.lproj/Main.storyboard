@@ -235,6 +235,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="BYr-xI-0mh" id="2c9-yz-H1S"/>
+                        <outlet property="forecast1Image" destination="mNB-jY-r2h" id="kUt-BG-sc9"/>
+                        <outlet property="forecast1Label" destination="xA9-Sr-Xj4" id="jBG-RZ-0Iu"/>
+                        <outlet property="forecast1Temp" destination="RFN-MX-mte" id="WA4-2K-Gmr"/>
+                        <outlet property="forecast2Image" destination="pIy-nk-LfR" id="sYq-Bv-Eii"/>
+                        <outlet property="forecast2Label" destination="RlL-eE-fFT" id="exX-b5-5ZL"/>
+                        <outlet property="forecast2Temp" destination="7RV-Lb-MVp" id="G31-If-aqP"/>
+                        <outlet property="forecast3Image" destination="NZf-b9-ckv" id="EOu-f7-LeW"/>
+                        <outlet property="forecast3Label" destination="hML-OP-roV" id="Lc3-hN-Aul"/>
+                        <outlet property="forecast3Temp" destination="tWH-nW-o0B" id="KvX-Jf-W2s"/>
+                        <outlet property="forecast4Image" destination="5mu-Rt-emB" id="K8r-ZQ-bBt"/>
+                        <outlet property="forecast4Label" destination="d8R-MI-FJ9" id="l7t-CP-Q1c"/>
+                        <outlet property="forecast4Temp" destination="IRa-qr-RBM" id="gsw-V9-Db1"/>
+                        <outlet property="forecast5Image" destination="5LI-Ow-Cy4" id="It4-fF-wzA"/>
+                        <outlet property="forecast5Label" destination="I3P-Fa-Ug2" id="tsy-oG-LvE"/>
+                        <outlet property="forecast5Temp" destination="OWf-i5-z7v" id="BXf-um-hNn"/>
+                        <outlet property="temperatureLabel" destination="vct-0x-eDp" id="hmn-Ko-GrS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
