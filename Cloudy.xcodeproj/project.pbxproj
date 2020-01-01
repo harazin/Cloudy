@@ -13,6 +13,8 @@
 		A7C85DC723BCAEDA00DCEF99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C85DC523BCAEDA00DCEF99 /* Main.storyboard */; };
 		A7C85DC923BCAEDB00DCEF99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C85DC823BCAEDB00DCEF99 /* Assets.xcassets */; };
 		A7C85DCC23BCAEDB00DCEF99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C85DCA23BCAEDB00DCEF99 /* LaunchScreen.storyboard */; };
+		A7D95FC723BCC524004CFCAB /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D95FC623BCC524004CFCAB /* Overpass-Regular.ttf */; };
+		A7D95FC923BCC52D004CFCAB /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D95FC823BCC52D004CFCAB /* Overpass-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A7C85DC823BCAEDB00DCEF99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7C85DCB23BCAEDB00DCEF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7C85DCD23BCAEDB00DCEF99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D95FC623BCC524004CFCAB /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		A7D95FC823BCC52D004CFCAB /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C85DBE23BCAEDA00DCEF99 /* Cloudy */,
+				A7D95FC523BCC4E4004CFCAB /* fonts */,
 				A7C85DBD23BCAEDA00DCEF99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +70,15 @@
 				A7C85DCD23BCAEDB00DCEF99 /* Info.plist */,
 			);
 			path = Cloudy;
+			sourceTree = "<group>";
+		};
+		A7D95FC523BCC4E4004CFCAB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A7D95FC623BCC524004CFCAB /* Overpass-Regular.ttf */,
+				A7D95FC823BCC52D004CFCAB /* Overpass-Bold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,8 @@
 			files = (
 				A7C85DCC23BCAEDB00DCEF99 /* LaunchScreen.storyboard in Resources */,
 				A7C85DC923BCAEDB00DCEF99 /* Assets.xcassets in Resources */,
+				A7D95FC923BCC52D004CFCAB /* Overpass-Bold.ttf in Resources */,
+				A7D95FC723BCC524004CFCAB /* Overpass-Regular.ttf in Resources */,
 				A7C85DC723BCAEDA00DCEF99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
